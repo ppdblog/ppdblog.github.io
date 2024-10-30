@@ -28,12 +28,25 @@ ion-icon {
     src: url("../assets/fonts/product-sans/productsans-regular-webfont.woff") format("woff");
 }
 
+@font-face {
+    font-family: "Product Sans Light Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../assets/fonts/product-sans/productsans-light-webfont.woff") format("woff");
+}
 
 @font-face {
     font-family: "Product Sans Bold";
     font-style: normal;
     font-weight: normal;
     src: url("../assets/fonts/product-sans/productsans-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Product Sans Medium Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../assets/fonts/product-sans/productsans-medium-webfont.woff") format("woff");
 }
 
 
@@ -243,12 +256,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--hero-title);
+    background-color: hsl(0, 0%, 70%);
     border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: hsl(0, 0%, 70%);
+    background-color: hsl(0, 0%, 60%);
 }
 
 
@@ -320,6 +333,7 @@ html {
     display: none;
     align-items: center;
     color: var(--site-title);
+    cursor: pointer;
 }
 
 .nav-logo-title img {
@@ -855,6 +869,7 @@ body:has(.wallpaper[style*="display: block"]) .fav-no-results-found {
     background-color: var(--popup-info-btn-bg);
     justify-content: center;
     min-width: 125px;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
 }
 
 #popup-buttons .popup-button:nth-child(4) svg,
@@ -903,7 +918,8 @@ body:has(.wallpaper[style*="display: block"]) .fav-no-results-found {
     height: 100%;
     position: relative;
     overflow: hidden;
-    animation: scalePopup 1s ease forwards;
+    animation: scalePopup 0.2s ease forwards;
+
 }
 
 .loading-wall {
@@ -944,6 +960,7 @@ body:has(.wallpaper[style*="display: block"]) .fav-no-results-found {
     padding: 10px;
     border-radius: 30px;
     transition: 0.3s ease;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
 }
 
 .collapsed {
@@ -1204,8 +1221,8 @@ Icons
 .pack-card {
     width: 100%;
     border: 1px solid var(--col-btn-border);
-    border-radius: 15px;
-    padding: 15px 15px 10px 15px;
+    border-radius: 25px;
+    padding: 10px 10px 5px 10px;
     overflow: hidden;
 }
 
@@ -1242,8 +1259,8 @@ Icons
     display: flex;
     justify-content: space-between;
     background-color: var(--stat-bg);
-    padding: 10px;
-    border-radius: 15px 15px 2px 2px;
+    padding: 10px 15px;
+    border-radius: 20px 20px 6px 6px;
     margin-top: 15px;
 }
 
@@ -1262,12 +1279,11 @@ Icons
 .discount-validity {
     background-color: var(--stat-bg);
     padding: 12px;
-    border-radius: 2px 2px 15px 15px;
+    border-radius: 6px;
     margin-top: 2px;
 }
 
 .pack-discount {
-    margin-top: 2px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1309,10 +1325,10 @@ Icons
 
 .pack-buttons {
     display: flex;
-    gap: 10px;
+    gap: 2px;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 2px;
     margin-bottom: 5px;
     flex-wrap: wrap;
 }
@@ -1322,8 +1338,8 @@ Icons
     cursor: pointer;
     background-color: var(--sort-bg);
     color: var(--col-name);
-    padding: 10px 15px;
-    border-radius: 30px;
+    padding: 15px;
+    border-radius: 6px 6px 6px 20px;
     flex: 1;
     flex-wrap: nowrap;
 }
@@ -1331,8 +1347,8 @@ Icons
 .pack-get-button {
     background-color: var(--col-title);
     color: var(--top-nav-bg);
-    padding: 10px 15px;
-    border-radius: 30px;
+    padding: 15px;
+    border-radius: 6px 6px 20px 6px;
     text-align: center;
     text-decoration: none;
     width: max-content;
@@ -1362,7 +1378,7 @@ Icons
 
 
 .pack-image {
-    height: 200px;
+    height: 204px;
     border-radius: 10px;
     background-color: #b0b0b0;
 }
@@ -1495,8 +1511,6 @@ Settings
     gap: 20px;
     justify-content: center;
 }
-
-/* Copyright: makibul.com */
 
 .setting-social .social-icon {
     padding: 20px;
@@ -2062,12 +2076,13 @@ ANIMATION KEYFRAMES
 /* Wallpaper popup animation */
 @keyframes scalePopup {
     from {
-        transform: scale(0);
-        border-radius: 25%;
+        filter: blur(5px);
+        opacity: 0;
     }
 
     to {
-        transform: scale(1);
+        filter: blur(0);
+        opacity: 1;
     }
 }
 
