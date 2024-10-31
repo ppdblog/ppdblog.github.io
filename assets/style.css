@@ -374,6 +374,10 @@ html {
     fill: var(--home-top-icon);
 }
 
+#menu-giveaway svg {
+    fill: none;
+}
+
 
 
 .search-container {
