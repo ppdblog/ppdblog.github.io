@@ -1568,12 +1568,17 @@ Icons
 .post-thumbnail {
     background-color: var(--post-thumbnail);
     overflow: hidden;
+    position: relative;
+    padding-top: 56.25%;
 }
 
 .post-thumbnail img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .post-info {
