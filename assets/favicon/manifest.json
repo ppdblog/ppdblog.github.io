@@ -1,0 +1,154 @@
+{
+  "name": "PashaPuma Design",
+  "short_name": "PashaPuma",
+  "description": "PashaPumaDesign.com is your ultimate destination for exploring curated collections of wallpapers. \nMake your wallpaper experience smoother and more enjoyable—install this website as a PWA to launch directly from your home screen without needing to open any browser.",
+  "id": "pashapumadesign",
+  "theme_color": "#F3F1E2",
+  "background_color": "#F3F1E2",
+  "display": "standalone",
+  "orientation": "portrait",
+  "dir": "ltr",
+  "scope": "/",
+  "start_url": "/?source=pwa",
+  "lang": "en-US",
+  "categories": [
+    "photo",
+    "utilities",
+    "entertainment"
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://pashapumadesign.com/assets/favicon/manifest.json",
+      "id": "ppdPWA"
+    }
+  ],
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "monochrome-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "monochrome"
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "/assets/images/screenshots/shot1.png",
+      "sizes": "400x822",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/assets/images/screenshots/shot2.png",
+      "sizes": "400x822",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/assets/images/screenshots/shot3.png",
+      "sizes": "400x822",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/assets/images/screenshots/shot4.png",
+      "sizes": "400x822",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/assets/images/screenshots/shot5.png",
+      "sizes": "1280x676",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/assets/images/screenshots/shot6.png",
+      "sizes": "1280x676",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "Giveaway",
+      "short_name": "PPD Giveaway",
+      "description": "Get promo codes to download PashaPuma Design apps for free",
+      "url": "/#t=giveaway",
+      "icons": [
+        {
+          "src": "giveaway_96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Guides",
+      "short_name": "PPD Guides",
+      "description": "Easy to use guides for my icon packs",
+      "url": "/#t=guide",
+      "icons": [
+        {
+          "src": "guides_96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Icon Packs",
+      "short_name": "PPD Icon Packs",
+      "description": "List and info about all my icon packs",
+      "url": "/#t=icons",
+      "icons": [
+        {
+          "src": "icons_96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "short_name": "PPD Settings",
+      "description": "Change settings for the PPD site",
+      "url": "/#t=settings",
+      "icons": [
+        {
+          "src": "settings_96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+
+  "share_target": {
+    "action": "/share-target",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "edge_side_panel": {
+    "preferred_width": 480
+  },
+  "handle_links": "auto",
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  }
+}

@@ -1,0 +1,291 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Article Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #222;
+    margin: 16px 0 8px;
+    line-height: 1.2;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
+
+p {
+    margin: 16px 0;
+    line-height: 1.8;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+i, em {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+s, del {
+    text-decoration: line-through;
+}
+
+/* Links */
+a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+    margin: 16px 0;
+    padding-left: 40px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* Blockquotes */
+blockquote {
+    font-style: italic;
+    background-color: #f0f0f0;
+    padding: 16px;
+    border-left: 4px solid #007acc;
+    margin: 16px 0;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 16px 0;
+}
+
+/* Superscript and Subscript */
+sup, sub {
+    font-size: 0.8em;
+    line-height: 1;
+}
+
+/* Code */
+code {
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.4rem; }
+    h4 { font-size: 1.2rem; }
+    h5 { font-size: 1.05rem; }
+    h6 { font-size: 0.95rem; }
+    
+    table, th, td {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+
+
+/* Navbar Styles */
+header {
+    background-color: #6d6d6d;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-name {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.back-button, .menu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.back-button:hover, .menu-toggle:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Menu */
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #6d6d6d;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        position: static;
+        background-color: transparent;
+        flex-direction: row;
+        margin-left: auto;
+    }
+
+    .menu a {
+        margin: 0 10px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.post-date {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Share and Copy Buttons */
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.share-buttons button {
+    padding: 12px 22px;
+    margin: 0 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.share-buttons button:hover {
+    opacity: 0.9;
+}
+
+.share-buttons button:first-child {
+    background-color: #6d6d6d;
+    color: #fff;
+}
+
+.share-buttons button:last-child {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #000072;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    color: #555;
+    font-size: 0.8rem;
+}

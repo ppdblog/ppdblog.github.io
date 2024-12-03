@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giveaway Generator</title>
+    <style>
+        #timeSelectorPopup input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#timeSelectorPopup button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+textarea[readonly] {
+    background-color: #f1f1f1;
+}
+
+       
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Giveaway Generator</h1>
+        
+        <div class="form-group">
+            <label for="giveawayTitle">Giveaway Title:</label>
+            <input type="text" id="giveawayTitle" placeholder="Enter giveaway title">
+        </div>
+        <div class="form-group">
+            <label for="post-description">Short Description</label>
+            <input type="text" id="post-description" placeholder="Write a short description">
+        </div>
+        <div class="form-group">
+            <label for="giveawayThumbnail">Giveaway Thumbnail URL:</label>
+            <input type="text" id="giveawayThumbnail" placeholder="Enter giveaway thumbnail URL">
+        </div>
+        <div class="form-group">
+            <label for="productSelect">Select Product:</label>
+            <select id="productSelect">
+                <option>Fetching products...</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="productIcon">Product Icon URL:</label>
+            <input type="text" id="productIcon" readonly>
+        </div>
+        <div class="form-group">
+            <label for="productLink">Product Link:</label>
+            <input type="text" id="productLink" readonly>
+        </div>
+        <div class="form-group">
+            <label for="startTime">Giveaway Starting Time:</label>
+            <input type="text" id="startTime" placeholder="Click to select date and time" readonly>
+            <span id="localTimeDisplay" style="display: block; margin-top: 5px; font-size: 0.9em; color: gray;"></span>
+        </div>
+        <div class="form-group">
+            <label for="promoCodes">Promo Codes:</label>
+            <textarea id="promoCodes" rows="6" placeholder="A1B2C3D4E5F6"></textarea>
+            <span id="promoCount" style="display: block; margin-top: 5px;">Codes Entered: 0</span>
+        </div>
+        <div class="form-group">
+            <label for="giveawayFolder">Giveaway path</label>
+            <input type="text" id="giveawayFolder" placeholder="promo-codes-for-pix-material-you">
+        </div>
+        <button id="generateHtmlBtn" class="button-generate" style="background: green;">Generate HTML</button>
+
+        <textarea id="generatedHtml" readonly placeholder="Generated HTML will appear here"></textarea>
+
+        <div style="
+        display: flex;
+        gap: 5px;
+    ">
+            <button id="copyHtmlBtn">Copy HTML</button>
+            <button id="downloadZipBtn">Download as ZIP</button>
+        </div>
+
+        <!-- Custom Time Selector Modal -->
+        <div id="timeSelectorPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                    background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    <h3>Select Giveaway Start Time</h3>
+    <label for="customDate">Date:</label>
+    <input type="date" id="customDate" style="margin-bottom: 10px; padding: 8px; width: 100%;">
+
+    <label for="customTime">Time:</label>
+    <input type="time" id="customTime" style="margin-bottom: 20px; padding: 8px; width: 100%;">
+
+    <div style="text-align: right;display: flex;gap: 5px;">
+        <button id="cancelTimeBtn" style="padding: 8px 16px; background: #f44336; color: #fff; border: none; border-radius: 4px;">Cancel</button>
+        <button id="applyTimeBtn" style="padding: 8px 16px; background: #4CAF50; color: #fff; border: none; border-radius: 4px;">Apply</button>
+    </div>
+</div>
+
+    </div>
+    <script src="/generate-giveaway/script.js"></script>
+</body>
+</html>
