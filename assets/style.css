@@ -1567,7 +1567,6 @@ Icons
 
 .post-thumbnail {
     background-color: var(--post-thumbnail);
-    height: 180px;
     overflow: hidden;
 }
 
