@@ -2046,7 +2046,7 @@ article h6 {
     font-style: italic;
 }
 
-.guide br {
+.guide br:last-child {
     display: none;
 }
 
