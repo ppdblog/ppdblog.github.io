@@ -1394,6 +1394,12 @@ Icons
     color: var(--hero-title);
 }
 
+.pack-desc {
+    font-size: 15px;
+    font-family: 'Product Sans Regular';
+    font-style: italic;
+}
+
 .pack-get-button svg .path {
     stroke: var(--top-nav-bg);
 }
