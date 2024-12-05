@@ -815,7 +815,7 @@ Collections
 }
 
 .fav-no-results-found {
-    display: block;
+    display: none;
     position: absolute;
     left: 50%;
     top: 40%;
@@ -824,13 +824,6 @@ Collections
 }
 
 
-body:not(:has(.collection-button[style*="display: block"])) .no-results-found {
-    display: block;
-}
-
-body:has(.wallpaper[style*="display: block"]) .fav-no-results-found {
-    display: none;
-}
 
 #collections-list button {
     padding: 80px 20px 20px;
