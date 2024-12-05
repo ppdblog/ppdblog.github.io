@@ -1260,7 +1260,7 @@ body:has(.wallpaper[style*="display: block"]) .fav-no-results-found {
 
 .manual-close-popup .msg-close-button {
     border: 1px solid #454545;
-    color: #ccc;
+    color: var(--popup-msg-text);
     margin-left: 20px;
     cursor: pointer;
     padding: 3px 10px;
@@ -1268,7 +1268,8 @@ body:has(.wallpaper[style*="display: block"]) .fav-no-results-found {
     transition: 0.2s ease;
 
     &:hover {
-        background-color: #555;
+        background-color: var(--popup-msg-text);
+        color: var(--popup-msg-bg);
     }
 }
 
