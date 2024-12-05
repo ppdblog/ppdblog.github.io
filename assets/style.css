@@ -588,7 +588,7 @@ body:has(#favs[style*="display: block"]) .top-navbar {
     border-top: 1px solid var(--bottom-nav-border);
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     padding: 10px 0;
     z-index: 1;
     transition: 0.2s ease;
@@ -648,6 +648,7 @@ body:has(#favs[style*="display: block"]) .top-navbar {
 .bottom-menu .menu-name {
     font-size: 13px;
     color: var(--bottom-nav-text);
+    text-align: center;
 }
 
 .active.bottom-menu .menu-name {
