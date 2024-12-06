@@ -2096,7 +2096,7 @@ article h6 {
     border-left: 4px solid var(--blqt-border);
     border-right: 1px solid var(--blqt-border);
     border-top: 1px solid var(--blqt-border);
-    border-botton: 1px solid var(--blqt-border);
+    border-bottom: 1px solid var(--blqt-border);
     margin: 16px 0;
     border-radius: 20px;
 }
