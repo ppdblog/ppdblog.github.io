@@ -153,8 +153,8 @@ ion-icon {
     --article-bg: #F3F1E2;
     --article-heading: #191C19;
     --guide-link: #56AF89;
-    --blqt-bg: #C8C9A9;
-    --blqt-border: #56AF89;
+    --blqt-bg: #F3F3D2;
+    --blqt-border: #C8CC83;
     --table-border: #ccc;
     --table-head-bg: #eee;
     --code-bg: #c5c5ff;
@@ -283,8 +283,8 @@ ion-icon {
     --article-bg: #191C19;
     --article-heading: #E4E89C;
     --guide-link: #72CCAC;
-    --blqt-bg: #30321C;
-    --blqt-border: #72CCAC;
+    : #30321C;
+    --blqt-border: #E4E89C;
     --table-border: #ccc;
     --table-head-bg: #eee;
     --code-bg: #c5c5ff;
