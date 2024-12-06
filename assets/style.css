@@ -895,7 +895,7 @@ Collections
 .collection-nav {
     display: flex;
     justify-content: space-between;
-    padding: 12px 5px;
+    padding: 7px 5px;
     background-color: var(--top-nav-bg);
     position: fixed;
     top: 0;
