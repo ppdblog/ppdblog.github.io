@@ -2933,7 +2933,7 @@ input.gsc-input {
 }
 
 .gsc-search-button {
-    margin-left: 0 !important;
+    margin-left: 5px !important;
 }
 
 
@@ -3003,7 +3003,7 @@ input.gsc-input {
     padding: 15px 10px !important;
 }
 
-.gsc-webResult.gsc-result:last-child {
+.gsc-result:last-child {
     border-bottom: none !important;
 }
 
@@ -3015,7 +3015,7 @@ input.gsc-input {
     color: var(--article) !important;
 }
 
-.gcsc-more-maybe-branding-root {
+.gcsc-more-maybe-branding-root, .gcsc-find-more-on-google-root {
     display: none !important;
 }
 
