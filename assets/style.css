@@ -2927,10 +2927,10 @@ input.gsc-input {
 }
 
 .gsc-search-button-v2 {
-    padding: 15px !important;
+    padding: 20px !important;
     border-radius: 50% !important;
     background-color: var(--get-app-btn) !important;
-    border-color: var(--get-app-btn) !important;
+    border: none !important;
 }
 
 .gsc-search-button-v2 svg {
