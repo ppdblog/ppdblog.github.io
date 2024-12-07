@@ -1333,6 +1333,7 @@ Icons
 #icons {
     margin-bottom: 80px;
     animation: fadeIn 0.2s ease forwards;
+    min-height: 100vh;
 }
 
 #icon-pack-container {
@@ -1344,7 +1345,8 @@ Icons
 
 #loading-message {
     display: flex;
-    color: var(--hero-desc)
+    color: var(--hero-desc);
+    margin: 15px 0;
 }
 
 #icon-pack-container>div {
@@ -1537,6 +1539,7 @@ Icons
 #guide {
     animation: fadeIn 0.2s ease forwards;
     margin-bottom: 80px;
+    min-height: 100vh;
 }
 
 #guide h2 {
@@ -1604,11 +1607,13 @@ Icons
 #giveaway {
     animation: fadeIn 0.2s ease forwards;
     margin-bottom: 80px;
+    min-height: 100vh;
 }
 
 #giveaway p,
 #guide p {
     color: var(--hero-desc);
+    margin: 15px 0px;
 }
 
 
@@ -2881,8 +2886,8 @@ ANIMATION KEYFRAMES
 
 
 .gsc-control-cse {
-    border-color: var(--post-border) !important;
-    background-color: var(--body-bg) !important;
+    border: none !important;
+    background-color: transparent !important;
     border-radius: 15px;
     margin-top: 20px;
     padding: 0 !important;
@@ -2891,7 +2896,7 @@ ANIMATION KEYFRAMES
 
 form.gsc-search-box {
     margin-bottom: 0 !important;
-    padding: 10px !important;
+    padding: 0 !important;
 }
 
 table.gsc-search-box{
@@ -2901,7 +2906,7 @@ table.gsc-search-box{
 .gsc-input-box {
     background: var(--search-bar-bg) !important;
     border: none !important;
-    border-radius: 15px !important;
+    border-radius: 30px !important;
     color: var(--search-input) !important;
 }
 
@@ -2933,7 +2938,7 @@ input.gsc-input {
 }
 
 .gsc-search-button {
-    margin-left: 5px !important;
+    margin-left: 10px !important;
 }
 
 
@@ -2956,7 +2961,7 @@ input.gsc-input {
 }
 
 .gsc-above-wrapper-area {
-    border-bottom: 1px solid var(--blqt-border) !important;
+    border-bottom: none !important;
 }
 
 .gsc-control-cse .gs-spelling, .gsc-control-cse .gs-result .gs-title, .gsc-control-cse .gs-result .gs-title *{
@@ -3022,12 +3027,14 @@ input.gsc-input {
 .gssb_e {
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
+    border: 1px solid var(--post-border) !important;
+    border-radius: 15px !important;
 }
 
 .gsc-completion-container {
     padding: 5px 0 !important;
     background: var(--set-option-bg) !important;
-    border: 1px solid var(--post-border) !important;
+    border: none !important;
     border-radius: 15px !important;
     color: var(--hero-desc) !important;
     overflow: hidden !important;
@@ -3035,6 +3042,10 @@ input.gsc-input {
 
 .gssb_a {
     padding: 5px 15px !important;
+}
+
+td.gssb_a {
+    border: none !important;
 }
 
 .gsc-completion-selected {
@@ -3046,4 +3057,8 @@ input.gsc-input {
     border: none !important;
     display: flex !important;
     justify-content: center !important;
+}
+
+table.gsc-search-box td.gsc-input{
+    padding-right: 0 !important;
 }
