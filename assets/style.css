@@ -2908,6 +2908,8 @@ table.gsc-search-box{
     border: none !important;
     border-radius: 30px !important;
     color: var(--search-input) !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
 }
 
 input.gsc-input {
