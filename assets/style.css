@@ -1016,8 +1016,35 @@ Collections
     min-height: 150px;
 }
 
+#thumbnails > div:nth-child(2n-1) .thumbnail:nth-child(2n-1) img,
+#fav-wrapper > div:nth-child(2n-1) .wallpaper:nth-child(2n-1) img
+ {
+min-height: 250px;
+}
+
+#thumbnails > div:nth-child(2n-1) .thumbnail:nth-child(2n) img,
+#fav-wrapper > div:nth-child(2n-1) .wallpaper:nth-child(2n) img
+ {
+min-height: 150px;
+}
+
+#thumbnails > div:nth-child(2n) .thumbnail:nth-child(2n-1) img,
+#fav-wrapper > div:nth-child(2n) .wallpaper:nth-child(2n-1) img
+ {
+min-height: 130px;
+}
+
+#thumbnails > div:nth-child(2n) .thumbnail:nth-child(2n) img,
+#fav-wrapper > div:nth-child(2n) .wallpaper:nth-child(2n) img
+ {
+min-height: 200px;
+}
+
+
 .thumbnail:hover,
-.wallpaper:hover {
+.wallpaper:hover,
+.thumbnail:hover img,
+.wallpaper:hover img {
     border-radius: 10px;
 }
 
@@ -1025,14 +1052,17 @@ Collections
 
 /* Wallpaper popup */
 
-#popup-buttons {
+.popup-buttons {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: end;
+    margin-top: -10px;
     flex-wrap: wrap;
+    gap: 10px;
+    float: right;
+    margin-left: 10px;
 }
 
-#popup-buttons .popup-button:nth-child(4) {
+#download-button {
     display: flex;
     gap: 5px;
     align-items: center;
@@ -1040,10 +1070,13 @@ Collections
     background-color: var(--popup-info-btn-bg);
     justify-content: center;
     min-width: 125px;
+    width: 100%;
+    margin: 10px 0 0;
+    height: 60px;
 }
 
-#popup-buttons .popup-button:nth-child(4) svg,
-#popup-buttons .popup-button:nth-child(4) svg path {
+#download-button svg,
+#download-button svg path {
     fill: var(--popup-info-btn-icon);
 }
 
@@ -1129,7 +1162,7 @@ Collections
     left: 10px;
     background-color: var(--popup-info-bg);
     width: calc(100% - 20px);
-    padding: 25px 20px;
+    padding: 20px;
     border-radius: 30px;
     transition: 0.3s ease;
 }
@@ -1151,11 +1184,8 @@ Collections
     display: inline;
 }
 
-#popup-buttons button {
-    margin: 5px;
-}
 
-#popup-buttons button svg {
+.popup-buttons button svg, #download-button svg {
     fill: var(--popup-info-icon);
 }
 
@@ -2664,17 +2694,6 @@ span.code {
 
     .swatch {
         flex: 1 0 30%;
-    }
-
-    .popup-button {
-        width: calc(100% / 3 - 10px);
-        justify-content: center;
-        border-radius: 15px;
-    }
-
-    .popup-button:nth-child(4) {
-        width: 100%;
-        background-color: #0056b3;
     }
 
     #popup-close {
