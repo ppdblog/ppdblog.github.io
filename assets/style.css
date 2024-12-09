@@ -962,7 +962,7 @@ Collections
     font-weight: bold;
 }
 
-#thumbnails {
+#thumbnails, #fav-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -972,7 +972,7 @@ Collections
     position: relative;
 }
 
-#thumbnails > div {
+#thumbnails > div, #fav-wrapper > div {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -1302,14 +1302,8 @@ Collections
 
 #favs {
     min-height: 100vh;
-}
-
-.fav-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 80px;
-    justify-content: center;
+    margin-top: 0;
+    padding: 0;
 }
 
 .fab {
@@ -2519,7 +2513,7 @@ span.code {
 
 @media (min-width: 350px) {
 
-    #thumbnails > div {
+    #thumbnails > div, #fav-wrapper > div {
         max-width: 50%;
     }
 
