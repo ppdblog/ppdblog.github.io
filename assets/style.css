@@ -1544,7 +1544,7 @@ Icons
 .pack-desc {
     font-size: 15px;
     font-family: 'Product Sans Regular';
-    font-style: italic;
+    opacity: 0.8;
 }
 
 .pack-get-button svg .path {
@@ -1609,6 +1609,7 @@ Icons
     text-decoration: line-through;
     color: var(--col-title);
     font-size: 15px;
+    opacity: 0.8;
 }
 
 .pack-final-price {
@@ -1621,6 +1622,7 @@ Icons
     margin-top: 5px;
     margin-left: 5px;
     font-style: italic;
+    opacity: 0.9
 }
 
 .pack-buttons {
@@ -1674,6 +1676,7 @@ Icons
     margin-bottom: 5px;
     padding-bottom: 5px;
     border-radius: 10px;
+    scroll-snap-type: x mandatory;
 }
 
 
@@ -1681,6 +1684,7 @@ Icons
     height: 204px;
     border-radius: 10px;
     background-color: #b0b0b0;
+    scroll-snap-align: center;
 }
 
 
