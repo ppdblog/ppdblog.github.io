@@ -1591,7 +1591,7 @@ Icons
 }
 
 .pack-discount span {
-    color: var(--site-title);
+    color: #474831;
     font-size: 18px;
     background-color: var(--sync-bar-border);
     padding: 5px 12px;
@@ -1607,7 +1607,7 @@ Icons
 
 .pack-original-price {
     text-decoration: line-through;
-    color: #777;
+    color: var(--col-title);
     font-size: 15px;
 }
 
@@ -1617,7 +1617,7 @@ Icons
 
 .pack-note {
     font-size: 11px;
-    color: #777;
+    color: var(--col-title);
     margin-top: 5px;
     margin-left: 5px;
     font-style: italic;
