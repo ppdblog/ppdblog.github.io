@@ -35,6 +35,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9692222221159238"
+        crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4HT0M7GS1F"></script>
     <script>
@@ -331,11 +334,10 @@
 
                 <div class="hero-text">
                     <h1>Pix Wallpapers</h1>
-                    <p>
-                        Are you bored with the default wallpaper on your phone? Whether you're looking for something fun
-                        and
-                        colorful or something more serious, we've got you covered.
-                    </p>
+                    <div>
+                        Walls that Inspire - <strong>Wallpapers that Define You</strong>.
+                        Endless Styles, Infinite Possibilities.
+                    </div>
                 </div>
 
 
@@ -357,35 +359,12 @@
                     </div>
                 </div>
                 <div class="info-card">
-                    <h2 id="total-wallpapers">3000+</h2>
+                    <h2 id="total-wallpapers">1000+</h2>
                     <div>
                         Wallpapers
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div id="collection-header">
-            <h2>Collections</h2>
-            <button id="sort-button">
-                <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SortOutlinedIcon">
-                    <path d="M3 18h6v-2H3zM3 6v2h18V6zm0 7h12v-2H3z"></path>
-                </svg>
-                Sort
-            </button>
-        </div>
-        <!-- Sort Options Popup -->
-        <div id="sort-options-popup" class="popup">
-            <p>Sort collections</p>
-            <ul>
-                <li data-sort="asc">A - Z</li>
-                <li data-sort="desc">Z - A</li>
-                <li data-sort="num-asc">1 - 9</li>
-                <li data-sort="num-desc">9 - 1</li>
-                <li data-sort="none">Reset</li>
-                <li data-sort="random">Random</li>
-            </ul>
         </div>
 
         <div class="no-results-found">No results found :(</div>
@@ -436,8 +415,8 @@
     <!-- Icons -->
 
     <div class="content" id="icons">
-        <h2 style="margin-bottom: 5px;">Icon Packs</h2>
-        
+        <h2>Icon Packs</h2>
+
         <button id="retry-button" style="display: none;" onclick="loadData()">Retry loading</button>
 
         <!-- Loading message -->
@@ -510,18 +489,6 @@
                         </span>
                     </div>
 
-                    <label class="setting-option" for="toggle-show-bg" id="toggle-show-bg-setting">
-                        <label for="toggle-show-bg" class="set-option">Show collection background
-                            <span>
-                                Display random wallpaper for each collection in the collections list
-                            </span>
-                        </label>
-                        <div class="toggle">
-                            <input type="checkbox" id="toggle-show-bg">
-                            <label for="toggle-show-bg" class="toggle-label"></label>
-                        </div>
-                    </label>
-
                     <label class="setting-option auto-resync" for="auto-resync-toggle" id="auto-resync-setting">
                         <label for="auto-resync-toggle" class="set-option">Auto sync walls daily
                             <span id="last-sync-time">
@@ -555,6 +522,23 @@
                             </path>
                         </svg>
                         <span class="set-option">Email</span>
+                    </div>
+
+                    <div class="setting-option"
+                        onclick="window.open('https://github.com/pashapuma/Wallpapers_app?tab=readme-ov-file#pix-wallpapers-app', '_blank')">
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" style="fill: none;"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="path"
+                                d="M14.7249 8.15612C16.2754 7.23788 17.0507 6.77876 17.6201 7.10452C18.1895 7.43027 18.1759 8.32517 18.1487 10.115L18.1416 10.578C18.1339 11.0866 18.13 11.3409 18.2248 11.5644C18.3196 11.7878 18.5023 11.9552 18.8677 12.2899L19.2003 12.5946C20.4862 13.7725 21.1291 14.3614 20.9784 15.0228C20.8277 15.6841 19.9831 15.9799 18.2941 16.5714L17.8571 16.7245C17.3771 16.8926 17.1371 16.9766 16.953 17.1451C16.7689 17.3137 16.6615 17.5475 16.4467 18.0153L16.2512 18.4412C15.4953 20.0874 15.1174 20.9105 14.4549 20.9935C13.7924 21.0765 13.284 20.3644 12.2673 18.9402L12.0043 18.5717C11.7154 18.167 11.5709 17.9647 11.3623 17.8453C11.1538 17.726 10.9047 17.7032 10.4065 17.6576L9.95303 17.6161C8.20005 17.4557 7.32356 17.3754 7.06482 16.7654C6.80608 16.1553 7.33644 15.4194 8.39716 13.9477L8.67158 13.5669C8.973 13.1487 9.12372 12.9396 9.17893 12.6973C9.23414 12.4551 9.18759 12.2071 9.09451 11.7111L9.00976 11.2596C8.68219 9.51421 8.51841 8.64154 9.02101 8.18152C9.52362 7.7215 10.3598 7.9788 12.032 8.49339L12.4647 8.62652C12.9399 8.77276 13.1775 8.84587 13.4202 8.81547C13.6629 8.78508 13.8832 8.65461 14.3238 8.39368L14.7249 8.15612Z"
+                                stroke-width="1.5" />
+                            <path class="path" opacity="0.5" d="M13.5 6.5L13 6M9.5 2.5L11.5 4.5" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <path class="path" opacity="0.5" d="M6.5 6.5L4 4" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <path class="path" opacity="0.5" d="M6 12L4.5 10.5M2 8L2.5 8.5" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg>
+                        <span class="set-option">Donate</span>
                     </div>
 
                     <div class="setting-option"
