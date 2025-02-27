@@ -147,6 +147,7 @@ ion-icon {
     --sync-bar-border: #72E57C;
 
     --progress-bg: #5F6227;
+    --progress-bar-bg: #72E57C;
 
 
     /* Favs */
@@ -185,6 +186,8 @@ ion-icon {
     --app-info-border: #E4E89C;
     --install-app-bg: #5F6227;
     --install-app-btn: #F3F1E2;
+
+    --unchecked-before: #72E57C;
 }
 
 
@@ -285,6 +288,7 @@ ion-icon {
     --sync-bar-border: #72E57C;
 
     --progress-bg: #E4E89C;
+    --progress-bar-bg: #5F6227;
 
     /* Favs */
     --fab-bg: #E4E89C;
@@ -322,6 +326,8 @@ ion-icon {
     --app-info-border: #5F6227;
     --install-app-bg: #E4E89C;
     --install-app-btn: #191C19;
+
+    --unchecked-before: #E4E89C;
 
 }
 
@@ -377,7 +383,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--scroll-track);
+    background-color: var(--body-bg);
     border-radius: 20px;
 }
 
@@ -432,11 +438,19 @@ html {
 }
 
 .reveal-image:nth-child(7) {
-    transition: all 1.7s ease;
+    transition: all 1.5s ease;
 }
 
 .reveal-image:nth-child(8) {
-    transition: all 1.9s ease;
+    transition: all 1.5s ease;
+}
+
+.reveal-image:nth-child(9) {
+    transition: all 1.5s ease;
+}
+
+.reveal-image:nth-child(10) {
+    transition: all 1.5s ease;
 }
 
 .reveal-image.image-revealed {
@@ -2077,17 +2091,18 @@ div#goog-gt- {
     bottom: 0;
     background-color: var(--active-icon-bg);
     transition: .2s;
+    border: 1px solid var(--bottom-nav-icon);
     border-radius: 34px;
 }
 
 .toggle-label:before {
     position: absolute;
     content: "";
-    height: 15px;
-    width: 15px;
-    left: 7px;
-    bottom: 7px;
-    background-color: white;
+    height: 16px;
+    width: 16px;
+    left: 6px;
+    bottom: 6px;
+    background-color: var(--unchecked-before);
     transition: .2s;
     border-radius: 50%;
 }
@@ -2100,8 +2115,8 @@ input:checked+.toggle-label:before {
     transform: translateX(26px);
     height: 22px;
     width: 22px;
-    left: 4px;
-    bottom: 4px;
+    left: 3px;
+    bottom: 3px;
     background-color: var(--active-icon-bg);
 }
 
