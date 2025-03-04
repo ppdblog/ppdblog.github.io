@@ -532,6 +532,12 @@ html {
     transition: 0.3s ease;
 }
 
+.guide .top-navbar {
+    background-color: var(--blur-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
 .nav-logo-title {
     font-family: 'Product Sans Regular';
     gap: 5px;
@@ -687,6 +693,12 @@ body:has(#favs[style*="display: block"]) .top-navbar {
     padding: 10px 0;
     z-index: 1;
     transition: 0.2s ease;
+}
+
+.guide .navbar {
+    background-color: var(--blur-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .bottom-menu {
