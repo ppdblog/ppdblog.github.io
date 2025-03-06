@@ -6,6 +6,15 @@
   "theme_color": "#F3F1E2",
   "background_color": "#F3F1E2",
   "display": "standalone",
+  "file_handlers": [
+    {
+      "action": "/",
+      "accept": {
+        "image/jpeg": [".jpg", ".jpeg"],
+        "image/png": [".png"]
+      }
+    }
+  ],
   "orientation": "portrait",
   "dir": "ltr",
   "scope": "/",
