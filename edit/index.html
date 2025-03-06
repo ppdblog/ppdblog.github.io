@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Edit Photos - Fractal Glass Effect">
+    <meta name="keywords"
+        content="pashapuma design, android, icon packs, pix wallpapers, customization, homescreen, widgets, material you, edit photos, editor, fractal glass effect, nothing glass effect, nothing wallpaper, nothing phone glass, fractal, nothing effect, fractal effect">
+    <meta property="og:title" content="PashaPuma Design">
+    <meta property="og:description" content="Edit Photos - Fractal Glass Effect">
+    <meta property="og:image"
+        content="https://play-lh.googleusercontent.com/XnojuLT1PB-SpWRjj95PBkWGQU7sUDGOyjcuQ8JLrIs1x8uCL0ZOAO8JVuVR9dS3PqIj=w3840-h2160-rw">
+    <meta property="og:url" content="https://pashapumadesign.com/edit">
+    <meta name="twitter:card"
+        content="https://play-lh.googleusercontent.com/XnojuLT1PB-SpWRjj95PBkWGQU7sUDGOyjcuQ8JLrIs1x8uCL0ZOAO8JVuVR9dS3PqIj=w3840-h2160-rw">
+    <meta name="theme-color" content="#f3f1e2">
+    <meta name="background-color" content="#f3f1e2">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="https://pashapumadesign.com/assets/favicon/manifest.json">
+    <link rel="icon" href="https://pashapumadesign.com/assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://pashapumadesign.com/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="https://pashapumadesign.com/assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512"
+        href="https://pashapumadesign.com/assets/favicon/android-chrome-512x512.png">
+    <link rel="stylesheet" href="/edit/assets/phosphor-icons/Fonts/bold/style.css">
+    <script crossorigin="anonymous"
+        src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.js"></script>
+    <link rel="stylesheet" href="/edit/assets/style.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Edit Photos - PashaPumaDesign</title>
+    <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="8c8348e2-7f5b-4d9c-b6d9-0cdca3d8adb4" async></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="page-header">
+            <div class="header-left">
+                <button class="menu-button" id="menuScreenBtn"><i class="ph-bold ph-list"></i></button>
+                <h2>PashaPumaDesign <span>Edit</span></h2>
+            </div>
+            <button id="downloadScreenBtn" class="primary-btn">Download</button>
+        </div>
+
+
+        <div class="menu-screen" id="menuScreen">
+            <div class="menu-top">
+                <div class="pashapuma"><a href="https://pashapumadesign.com"><i class="ph-bold ph-house"></i> PashaPumaDesign</a></div>
+                <button id="close-menu" class="close-menu"><i class="ph-bold ph-x"></i></button>
+            </div>
+            <div class="menu-wrap">
+                <div class="menu-options">
+                    <a href="https://pashapumadesign.com"><div class="menu-option"><i class="ph-bold ph-images-square"></i> Free wallpapers</div></a>
+                    <a href="https://play.google.com/store/apps/dev?id=6218933727384977479" target="_blank"><div class="menu-option"><i class="ph-bold ph-google-play-logo"></i> Icon packs for Android</div></a>
+                    <a href="https://pashapumadesign.com/#t=giveaway"><div class="menu-option"><i class="ph-bold ph-gift"></i> Giveaways</div></a>
+                </div>
+
+                <div class="social">
+                    <a href="https://t.me/devPashapuma" target="_blank"><div class="social-link"><i class="ph-bold ph-telegram-logo"></i></div></a>
+                    <a href="https://x.com/pashapuma1" target="_blank"><div class="social-link"><i class="ph-bold ph-x-logo"></i></div></a>
+                    <a href="mailto:pashapuma1@gmail.com" target="_blank"><div class="social-link"><i class="ph-bold ph-envelope-simple"></i></div></a>
+                </div>
+
+                <div class="menu-footer">
+                    <a href="https://pashapumadesign.com/pages/about"><div class="menu-footer-link">About</div></a>
+                    <a href="https://pashapumadesign.com/pages/disclaimer"><div class="menu-footer-link">Disclaimer</div></a>
+                    <a href="https://pashapuma.github.io/pixMaterial/pix_wallpapers/policy"><div class="menu-footer-link">Privacy</div></a>
+                    <a href="https://pashapumadesign.com/pages/terms-of-use"><div class="menu-footer-link">Terms of use</div></a>
+                </div>
+                <div class="app-copyright">&copy; <span id="year" style="display: inline-block;"></span> - All Rights Reserved <br> PashaPuma Design</div>
+            </div>
+
+            <div class="menu-bottom">
+                <div class="themes">
+                    <div class="theme-choice" id="theme-light" data-theme="light"><i class="ph-bold ph-sun"></i></div>
+                    <div class="theme-choice" id="theme-system" data-theme="system"><i
+                            class="ph-bold ph-circle-half"></i></div>
+                    <div class="theme-choice" id="theme-dark" data-theme="dark"><i class="ph-bold ph-moon"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image-preview" id="imagePreview" style="width: 70%;">
+                <img id="image" style="width: 100%;" src="/edit/assets/images/edit-photos-by-pashapumadesign.jfif"
+                    alt="Preview">
+                <div class="wrapper hidden" id="wrapper"></div>
+            </div>
+            <div class="control-view">
+                <button id="increaseWidthBtn"><i class="ph-bold ph-plus"></i></button>
+                <button id="decreaseWidthBtn"><i class="ph-bold ph-minus"></i></button>
+            </div>
+            <div class="controls-panel blur-bg" id="controlsPanel">
+                <div id="effectMenu" class="submenu hidden">
+                    <div id="fractal-options" class="opacity50">
+
+                        <div class="control-group">
+                            <span><i class="ph-bold ph-flip-horizontal"></i> Flip fractals</span>
+                            <div class="toggle">
+                                <input type="checkbox" id="flip-toggle" disabled>
+                                <label for="flip-toggle" class="toggle-label"></label>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <span><i class="ph-bold ph-sparkle"></i> Shimmer</span>
+                            <div class="toggle">
+                                <input type="checkbox" id="shimmer-toggle" disabled>
+                                <label for="shimmer-toggle" class="toggle-label"></label>
+                            </div>
+                        </div>
+
+                        <div class="control-group-2">
+                            <label><i class="ph-bold ph-steps"></i> Steps</label>
+                            <div class="slider-container">
+                                <span class="slider-value">33</span>
+                                <input type="range" id="steps" min="12" max="64" value="33" disabled>
+                            </div>
+                        </div>
+
+                        <div class="control-group-2">
+                            <label><i class="ph-bold ph-ruler"></i> Scale</label>
+                            <div class="slider-container">
+                                <span class="slider-value">2</span>
+                                <input type="range" id="scale" min="0" max="40" value="2" disabled>
+                            </div>
+                        </div>
+
+                        <div class="control-group-2">
+                            <label><i class="ph-bold ph-pulse"></i> Frequency</label>
+                            <div class="slider-container">
+                                <span class="slider-value">0.05</span>
+                                <input type="range" id="baseFrequency" min="0" max="0.2" step="0.01" value="0.05" disabled>
+                            </div>
+                        </div>
+
+                        <div class="control-group-2">
+                            <label><i class="ph-bold ph-waves"></i> Octaves</label>
+                            <div class="slider-container">
+                                <span class="slider-value">4</span>
+                                <input type="range" id="numOctaves" min="0" max="8" value="4" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fractal-toggle">
+                        <span><i class="ph-bold ph-slideshow"></i> Fractal Glass Effect</span>
+                        <div class="toggle">
+                            <input type="checkbox" id="fractal-toggle">
+                            <label class="toggle-label" for="fractal-toggle"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="colorMenu" class="submenu hidden">
+                    <div class="control-group-2">
+                        <label><i class="ph-bold ph-palette"></i> Hue</label>
+                        <div class="slider-container">
+                            <span class="slider-value">0</span>
+                            <input type="range" id="hue" min="-180" max="180" value="0">
+                        </div>
+                    </div>
+
+                    <div class="control-group-2">
+                        <label><i class="ph-bold ph-paint-bucket"></i> Saturation</label>
+                        <div class="slider-container">
+                            <span class="slider-value">0</span>
+                            <input type="range" id="saturation" min="-100" max="100" value="0">
+                        </div>
+                    </div>
+
+                    <div class="control-group-2">
+                        <label><i class="ph-bold ph-sun"></i> Brightness</label>
+                        <div class="slider-container">
+                            <span class="slider-value">0</span>
+                            <input type="range" id="brightness" min="-100" max="100" value="0">
+                        </div>
+                    </div>
+
+                    <div class="control-group-2">
+                        <label><i class="ph-bold ph-paint-brush-broad"></i> Contrast</label>
+                        <div class="slider-container">
+                            <span class="slider-value">0</span>
+                            <input type="range" id="contrast" min="-100" max="100" value="0">
+                        </div>
+                    </div>
+
+                    <div class="control-group-2">
+                        <label><i class="ph-bold ph-aperture"></i> Blur</label>
+                        <div class="slider-container">
+                            <span class="slider-value">0</span>
+                            <input type="range" id="blur" min="0" max="50" value="0">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="imageMenu" class="submenu hidden">
+                    <div id="dragDropArea" class="drag-drop-area">
+                        <i class="ph-bold ph-upload-simple"></i>
+                        <p>Drag and drop your image here</p>
+                        <button id="loadFromDevice" class="secondary-btn"><i class="ph-bold ph-folder-simple"></i> Load
+                            from
+                            Device</button>
+                        <input type="file" id="fileUpload" style="display: none;">
+                    </div>
+
+                    <div class="image-menu">
+                        <img src="/edit/assets/images/edit-photos-by-pashapumadesign.jfif" alt="Image 1"
+                            class="menu-image active">
+                    </div>
+
+                    <div class="url-upload">
+                        <input type="text" id="imageUrl" placeholder="Enter image URL">
+                        <button id="loadFromUrl" class="secondary-btn">Load from URL</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="download-screen" id="downloadScreen">
+                <div class="download-top">
+                    <div class="pashapuma"><a href="https://pashapumadesign.com"><i class="ph-bold ph-house"></i> PashaPumaDesign</a></div>
+                    <button id="close-download" class="close-download"><i class="ph-bold ph-x"></i></button>
+                </div>
+                <div class="download-wrap">
+
+                    <div class="choose-format">
+                        <label for="format">Choose format:</label>
+                        <div class="format-options">
+                            <input type="radio" name="format" id="format-jpeg" value="jpeg" checked>
+                            <label for="format-jpeg">
+                                <i class="ph-bold ph-circle unchecked-format"></i>
+                                <i class="ph-bold ph-check-circle checked-format"></i>
+                                JPEG
+                            </label>
+                            <input type="radio" name="format" id="format-png" value="png">
+                            <label for="format-png">
+                                <i class="ph-bold ph-circle unchecked-format"></i>
+                                <i class="ph-bold ph-check-circle checked-format"></i>
+                                PNG
+                            </label>
+
+                        </div>
+                    </div>
+
+
+                    <div class="download-info">Please stay on this page after clicking on the download button below
+                        until the download
+                        completes. <span>It may take a few seconds to render.</span>
+                    </div>
+                    <button id="downloadButton" class="primary-btn"><i class="ph-bold ph-download-simple"></i>
+                        Download now
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <svg width="0" height="0">
+            <filter id="displacementFilter">
+                <feturbulence type="turbulence" baseFrequency="0.05" numOctaves="4" result="turbulence" />
+                <fedisplacementmap in2="turbulence" in="SourceGraphic" scale="10" xChannelSelector="R"
+                    yChannelSelector="G" />
+            </filter>
+        </svg>
+
+
+        <div class="edit-bottom-menu">
+            <button id="effectButton"><i class="ph-bold ph-star-four"></i> Effect</button>
+            <button id="colorButton"><i class="ph-bold ph-intersect-three"></i> Filter</button>
+            <button id="imageButton"><i class="ph-bold ph-image-square"></i> Image</button>
+        </div>
+
+        <div id="popup-overlay"></div>
+    </div>
+    <script src="/edit/assets/script.js"></script>
+</body>
+
+</html>
