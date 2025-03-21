@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://pashapumadesign.com/sitemap.xml
