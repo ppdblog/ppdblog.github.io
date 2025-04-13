@@ -2052,6 +2052,10 @@ Icons
 
 /* guide */
 
+iframe {
+    width: 100%;
+}
+
 #guide {
     animation: fadeIn 0.2s ease forwards;
     margin-bottom: 80px;
